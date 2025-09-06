@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bad+Script&display=swap');
+
+h1 {
+  color: #02cc6a;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100rem;
+  height: 75rem;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 8px rgba(2, 204, 106, 0.2);
+  position: relative;
+}
+
+h1 {
+  font-family: 'Bungee', sans-serif;
+  font-weight: 400;
+  font-size: 3.6rem;
+  margin: 20px auto;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.inputSearch {
+  width: 50rem;
+  height: 5rem;
+  border-radius: 7px;
+  border: none;
+  color: #02cc6a;
+  padding-left: 5rem;
+  font-size: 2rem;
+  font-family: 'Bad Script', sans-serif;
+  font-weight: bold;
+  background-size: 5rem;
+}
+
+.inputSearch:focus {
+  outline: 1px solid #02cc6a;
+}
+
+.inputSearch::placeholder {
+  color: #aaa;
+  font-size: 2rem;
+}
+
+.inputSearch::-webkit-search-cancel-button {
+  display: none;
+}
+
+.searchIcon {
+  content: '';
+  color: #02cc6a;
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+}
+
+.btn {
+  height: 5rem;
+  min-width: 5rem;
+  border: none;
+  border-radius: 7px;
+  background: #02cc6a;
+  transition: all 0.2s ease-out;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn-text {
+  font-size: 2rem;
+  padding: 1rem;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+}
+.modeIcon {
+  width: 5rem;
+  color: #fff;
+}
+
+.btn-absolute {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
